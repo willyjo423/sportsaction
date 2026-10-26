@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="refresh" content="300"><title>Sharp board</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1b1f24;--muted:#5d6670;--rule:#dde1e6;--home:#2c5d8f;--away:#b9c4cf;
+ --pick:#1d7a4f;--pick-bg:#e8f4ee;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121519;--card:#1b2026;--ink:#e8ecf0;--muted:#9aa4ae;--rule:#2c333b;
+ --home:#6ea6dc;--away:#3d4752;--pick:#5fcf98;--pick-bg:#173326;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Source Sans 3",system-ui,-apple-system,sans-serif;
+ padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+main{max-width:700px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:30px;line-height:1.15;margin:0 0 4px}
+h2{font-size:22px;margin:36px 0 10px}
+h3{font-size:18px;margin:0;line-height:1.25}
+.muted{color:var(--muted);margin:4px 0 0;font-size:15px}
+.stats{display:flex;gap:28px;margin:18px 0;flex-wrap:wrap}
+.stats div{display:flex;flex-direction:column}
+.stats b{font-size:26px;font-variant-numeric:tabular-nums}
+.stats span{color:var(--muted);font-size:14px}
+.about{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;font-size:15px}
+.about p{margin:0 0 8px}.about p:last-child{margin:0}
+.about ul{margin:6px 0 8px;padding-left:20px}
+.game{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;margin:10px 0}
+.game header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+time{color:var(--muted);font-size:14px;white-space:nowrap}
+.fav{margin:10px 0 6px}
+.split{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--rule)}
+.split .a{background:var(--away)}.split .h{background:var(--home)}
+.split-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;margin-top:3px}
+.pick{background:var(--pick-bg);border-radius:6px;padding:10px 12px;margin:12px 0 0}
+.pick p{margin:0}.pick strong{color:var(--pick);font-size:17px}
+.nopick{color:var(--muted);margin:10px 0 0;font-size:15px}
+.notes{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:14.5px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 12px 6px 0;border-bottom:1px solid var(--rule);white-space:nowrap}
+thead th{color:var(--muted);font-weight:500}
+footer{margin-top:40px;color:var(--muted);font-size:14px}
+</style></head><body><main>
+<h1>Sharp board: NBA, NHL, NFL</h1>
+<p class="muted">Updated Mon Oct 26, 12:24 PM PT</p>
+<div class="stats"><div><b>0</b><span>Games</span></div><div><b>0</b><span>Picks</span></div>
+<div><b>0–0</b><span>Record</span></div></div>
+<div class="about">
+<p>Every game starts from Pinnacle's price with the margin removed: the sharpest number available.
+A pick appears only when a research-backed spot fires and that price hasn't already moved to account for it.</p>
+<ul><li>NBA: home team on the second night of a back-to-back against a rested visitor. Back the visitor.</li><li>NHL: public money piling onto a clear favorite. Back the underdog.</li>
+<li>NFL: no pick flag until late season, when fading teams that have clinched top seeds applies. Rest spots are shown as context.</li></ul>
+<p>Published edges like these are small and fade once known. The record below is the only proof that counts.</p>
+</div>
+
+<h2>Record</h2><p class="muted">No graded picks yet. Each flag gets its own line here once games finish.</p>
+<p class="muted">No games on the board right now.</p>
+<footer>Forecasts and research. Not betting advice.</footer>
+</main></body></html>
